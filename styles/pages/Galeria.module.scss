@@ -1,0 +1,74 @@
+@import "../variables.scss";
+
+.containerWrapper {
+  display: flex;
+  flex-direction: column;
+
+  select {
+    border: 1px solid $light-green;
+    color: $dark-green;
+    width: 300px;
+    max-width: 90%;
+    margin-bottom: $margin1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: $light-green;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 20px;
+  }
+
+  .container {
+    select {
+      padding: 25px;
+    }
+
+    p {
+      background-color: red;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 10px;
+
+      li {
+        display: flex;
+        max-height: 1000px;
+        max-width: 500px;
+        flex: 1 1 250px;
+        margin-left: 5px;
+        background-color: hsla(180, 41%, 57%, 0.1);
+        padding: 5px;
+        cursor: pointer;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.fullScreenImage {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  img {
+    position: relative;
+    max-height: 90%;
+    width: fit-content;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

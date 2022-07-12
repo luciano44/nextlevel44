@@ -1,0 +1,147 @@
+@import "../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+
+  .steps {
+    margin: $margin1 auto;
+    max-width: 95%;
+  }
+
+  h1,
+  .description {
+    padding: 0 25px;
+  }
+
+  h1 {
+    position: relative;
+    line-height: 100%;
+    margin: 0;
+    font-size: 64px;
+    font-weight: bold;
+    color: $dark-green;
+    font-family: "Tomorrow", sans-serif;
+    text-align: center;
+    filter: opacity(0);
+    animation: comeIn 1s 0.15s ease forwards;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.3rem;
+    }
+
+    span {
+      color: $light-green;
+    }
+  }
+
+  .description {
+    text-indent: 15px;
+    margin: $margin1 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+    filter: opacity(0.75);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 0 30px;
+    font-weight: 400;
+    height: 50px;
+    border: none;
+    background-color: $light-green;
+    color: $white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 5px 5px 10px;
+    max-width: 95%;
+    overflow: hidden;
+
+    &:hover {
+      filter: brightness(1.1);
+      img {
+        transform: scale(1.5);
+      }
+    }
+
+    img {
+      transition: 0.25s;
+      margin-right: 15px;
+    }
+
+    &:nth-last-child(1) {
+      background-color: transparent;
+      border: 1px solid $light-green;
+      color: $light-green;
+    }
+  }
+
+  .video {
+    background: $light-green;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+
+    iframe {
+      aspect-ratio: 16/9;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  .testimonials {
+    ul {
+      left: -1100px;
+      position: relative;
+      animation: 30s testimonials linear infinite;
+      display: flex;
+      width: fit-content;
+      padding: 0;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  .about {
+    text-indent: 15px;
+    margin-bottom: $margin1;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 0 25px;
+  }
+}
+
+@keyframes testimonials {
+  to {
+    transform: translateX(-3399.75px);
+  }
+}
+
+@keyframes comeIn {
+  from {
+    filter: opacity(0);
+    top: 50px;
+  }
+  to {
+    filter: opacity(1);
+    top: 0px;
+  }
+}

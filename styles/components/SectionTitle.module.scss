@@ -1,0 +1,20 @@
+@import "../variables.scss";
+
+.sectionTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: $dark-green;
+  height: fit-content;
+  margin: $margin2 0 $margin1 0;
+
+  img {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 15px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1));
+  }
+}

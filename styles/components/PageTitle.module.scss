@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.container {
+  margin: $margin1 auto;
+  font-family: "Tomorrow", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: $light-green;
+  text-align: center;
+  position: relative;
+  animation: comeIn 1s ease forwards;
+}
+
+@keyframes comeIn {
+  from {
+    filter: opacity(0);
+    top: 15px;
+  }
+  to {
+    filter: opacity(1);
+    top: 0px;
+  }
+}
