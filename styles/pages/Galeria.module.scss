@@ -16,17 +16,10 @@
     color: $light-green;
     font-family: "Tomorrow", sans-serif;
     font-size: 20px;
+    background-color: #fff;
   }
 
   .container {
-    select {
-      padding: 25px;
-    }
-
-    p {
-      background-color: red;
-    }
-
     ul {
       display: flex;
       flex-wrap: wrap;
