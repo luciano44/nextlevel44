@@ -91,6 +91,10 @@
     }
   }
 
+  button:not(a > button) {
+    text-shadow: 0 0 5px $dark-green;
+  }
+
   .video {
     background: $light-green;
     overflow: hidden;

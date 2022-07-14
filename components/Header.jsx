@@ -36,10 +36,10 @@ function Header() {
         </ul>
       </nav>
       <div className={styles.arrows}>
-        <img src="/img/icons/arrows.svg" />
-        <img src="/img/icons/arrows.svg" />
-        <img src="/img/icons/arrows.svg" />
-        <img src="/img/icons/arrows.svg" />
+        <img src="/img/icons/arrows.svg" alt="Setas" />
+        <img src="/img/icons/arrows.svg" alt="Setas" />
+        <img src="/img/icons/arrows.svg" alt="Setas" />
+        <img src="/img/icons/arrows.svg" alt="Setas" />
       </div>
     </header>
   );
